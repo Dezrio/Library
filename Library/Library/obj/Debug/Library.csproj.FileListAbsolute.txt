@@ -1,0 +1,15 @@
+D:\Проекты\C#\Library\Library\bin\Debug\Library.exe.config
+D:\Проекты\C#\Library\Library\bin\Debug\Library.exe
+D:\Проекты\C#\Library\Library\bin\Debug\Library.pdb
+D:\Проекты\C#\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
+D:\Проекты\C#\Library\Library\obj\Debug\MainWindow.g.cs
+D:\Проекты\C#\Library\Library\obj\Debug\App.g.cs
+D:\Проекты\C#\Library\Library\obj\Debug\Library_MarkupCompile.cache
+D:\Проекты\C#\Library\Library\obj\Debug\Library_MarkupCompile.lref
+D:\Проекты\C#\Library\Library\obj\Debug\MainWindow.baml
+D:\Проекты\C#\Library\Library\obj\Debug\Library.g.resources
+D:\Проекты\C#\Library\Library\obj\Debug\Library.Properties.Resources.resources
+D:\Проекты\C#\Library\Library\obj\Debug\Library.csproj.GenerateResource.cache
+D:\Проекты\C#\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+D:\Проекты\C#\Library\Library\obj\Debug\Library.exe
+D:\Проекты\C#\Library\Library\obj\Debug\Library.pdb

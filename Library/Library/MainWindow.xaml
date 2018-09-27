@@ -1,0 +1,42 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Каталог" Height="550" Width="800">
+<Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <Grid>
+        <TextBox Name="Title" HorizontalAlignment="Left" Height="25" Margin="30,30,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,10,0,0" TextWrapping="NoWrap" Text="Название" VerticalAlignment="Top" Width="160"/>
+        <TextBox Name="Author" HorizontalAlignment="Left" Height="25" Margin="220,30,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="220,10,0,0" TextWrapping="NoWrap" Text="Автор" VerticalAlignment="Top" Width="160"/>
+        <TextBox Name="Year" HorizontalAlignment="Left" Height="25" Margin="410,30,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="410,10,0,0" TextWrapping="NoWrap" Text="Год" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <Button Name="Add" Content="Добавить" HorizontalAlignment="Left" Margin="650,30,0,0" VerticalAlignment="Top" Height="25" Width="75" Click="Add_Click" Grid.Column="1"/>
+        <DataGrid Name="SQLGrid" AutoGenerateColumns="False" Margin="0,170,0,0" HorizontalAlignment="Stretch" AllowDrop="False" CanUserDeleteRows="False" CanUserAddRows="False" BeginningEdit="SQLGrid_BeginningEdit">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Path=Title}" Width="Auto"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Path=Author}" Width="Auto"/>
+                <DataGridTextColumn Header="Год" Binding="{Binding Path=Year}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Border Name="BrTitle" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="25" Margin="30,30,0,0" VerticalAlignment="Top" Width="160"/>
+        <Border Name="BrAuthor" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="25" Margin="220,30,0,0" VerticalAlignment="Top" Width="160"/>
+        <Border Name="BrYear" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="25" Margin="410,30,0,0" VerticalAlignment="Top" Width="160" />
+        <ComboBox Name="FilterBox" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top" Width="160" Height="25">
+            <TextBlock>Название</TextBlock>
+            <TextBlock>Автор</TextBlock>
+            <TextBlock>Год</TextBlock>
+        </ComboBox>
+        <TextBox Name="FilterText" HorizontalAlignment="Left" Height="25" Margin="220,80,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="350"/>
+        <Button Name="Filter" Content="Фильтр" HorizontalAlignment="Left" Margin="650,80,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="Filter_Click"/>
+        <Button Name="Clear" Content="Очистить лишнее" HorizontalAlignment="Left" Margin="350,125,0,0" VerticalAlignment="Top" Height="25"  Width="100" Click="Clear_Click"/>
+        <RadioButton GroupName="Log" Name="ConsoleLog" Content="ConsoleLog" HorizontalAlignment="Left" Margin="30,125,0,0" VerticalAlignment="Top" Width="160" Checked="ConsoleLog_Checked"/>
+        <RadioButton GroupName="Log" Name="TextLog" Content="TextLog" HorizontalAlignment="Left" Margin="30,145,0,0" VerticalAlignment="Top" Width="160" Checked="TextLog_Checked"/>
+    </Grid>
+        </ScrollViewer>
+    </Grid>    
+</Window>
